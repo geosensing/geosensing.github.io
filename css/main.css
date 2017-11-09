@@ -13,15 +13,9 @@ hr {
 }
 
 body {
-    margin: 0;
-    color: black;
-    transition: background-color 0.2s ease;
-    font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B'; 
-    font-weight: 400; 
-    font-style: normal;
-    text-align: left;
+    font: 13px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px;
 }
-
 
 @font-face {
     font-family: 'clarendonLight';
@@ -95,35 +89,15 @@ a:hover {
     text-decoration: none;
 }
 
-.nav ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+.list-horizontal li {
+    display:inline-block;
 }
-.nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
+.list-horizontal li:before {
+    content: '\00a0\2022\00a0\00a0';
+    color:#999;
+    color:rgba(0,0,0,0.5);
+    font-size:11px;
 }
- 
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
+.list-horizontal li:first-child:before {
+    content: '';
 }
- 
-.nav a:hover {
-  background-color: #005f5f;
-}
- 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
-}
- 
