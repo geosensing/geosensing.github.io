@@ -14,7 +14,7 @@ hr {
 
 body {
     margin: 0;
-    color: white;
+    color: black;
     transition: background-color 0.2s ease;
     font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B'; 
     font-weight: 400; 
